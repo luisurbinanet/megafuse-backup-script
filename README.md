@@ -13,10 +13,14 @@ Esta descarga puede ser también automatizada, rsync, scp o ftp/ftps incluso pue
 Pero pensemos, teniendo servicios de almacenamiento en la nube, como Dropbox, Mega, GDrive, o incluso, servicios montados por nosotros con herramientas como OwnCloud, por qué no aprovecharlos?
 
 Este script toma como base la explicación de Diego y realicé algunos cambios funcionales para mi caso del script original, agregando:
--. Agregue un parametro para activar el modo debug para que veamos en consola lo que va haciendo el script y asi ver su desempeño.
-   Obviamente una vez que veas que todo funciona correctamente, pones el DEBUG="false" y lo montas como un cronjob, así puedes dedicar
-   ese tiempo en estudiar otras cosas o pasarlo con la familia.
+
+-.Agregue un parametro para activar el modo debug para que veamos en consola lo que va haciendo el script y asi ver su desempeño.
+  Obviamente una vez que veas que todo funciona correctamente, pones el DEBUG="false" y lo montas como un cronjob, así puedes dedicar
+  ese tiempo en estudiar otras cosas o pasarlo con la familia.
+  
 -. La persistencia de backups anteriores hasta solo DAYS_TO_BACKUP que por defecto lo puse en 15 días.
+
+
 -. Establecer el Tiempo de Espera a que finalice la copia entre tu SERVIDOR y MEGA
    Si tu servidore esta en Internet, con 600 segundos (10 minutos) es mas que suficiente
    STANDBY_SECONDS=600
